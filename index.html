@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan:wght@100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" href="multimedia/imagenes/iconos/lpgo.png">
+    <title>Poser - Linkin Park</title>
+</head>
+<body id="body">
+    <header class="header" id="header">
+        <div class="centrar">
+            <h1 class="h1">Poser</h1>
+        </div>
+    </header>
+    <main class="main" id="main-principal">
+        <div class="container_start">
+            <img class="img_start" src="https://cdn-images.dzcdn.net/images/artist/4886905210739af3438990897bad3a98/500x500.jpg" alt="Linkin Park">
+            <button class="button_start" id="start">Jugar</button>
+        </div> 
+    </main>
+
+    <main class="main principal" style="display: none;" id="main-secundario">
+        <div class="container_quiz" id="quiz-container">
+            <div class="container_question">
+                <p class="question" id="question"></p>
+            </div>
+            <div class="container_org">
+                <div class="imagen_container">
+                    <img class="img_quiz" src="https://wallpapers.com/images/hd/linkin-park-4k-e3n9wxer2bquozug.jpg" id="miImagen">
+                    <img class="play_music" src="multimedia/imagenes/iconos/jugar.png" alt="play" id="play-music">
+                    <img class="stop_music" src="multimedia/imagenes/iconos/pausita.png" alt="pausita" id="stop-music" style="display: none;">
+                </div>
+                <audio id="miAudio" src="" controls style="display: none;"></audio>
+                <div class="container_buttons" id="options">
+                    <button class="button_options" id="option1"></button>
+                    <button class="button_options" id="option2"></button>
+                    <button class="button_options" id="option3"></button>
+                    <button class="button_options" id="option4"></button>
+                </div>
+            </div>
+            <div class="container_next">
+                <button class="button_next" id="next-btn">Next</button>
+            </div>
+        </div>
+        <div id="resultados-container" style="display: none;" class="container_results">
+            <h2 class="resultados">Resultados</h2>
+            <p id="resultados-texto" class="resultados-texto"></p>
+            <a href="poser.html"><button class="button_restart">Reintentar</button></a>
+        </div>
+    </main>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
